@@ -1,9 +1,9 @@
-﻿using UnityEditor;
+#if UNITY_EDITOR
+using UnityEditor;
 using UnityEngine;
 
 public class FindObjectsWithTagDiagnostic : EditorWindow {
 	
-	#if UNITY_EDITOR
 	string Tag;
 	int Layer;
 	string optionsInfo;
@@ -67,5 +67,5 @@ public class FindObjectsWithTagDiagnostic : EditorWindow {
 			GUILayout.Label ("Создано oscar7070(Версия 1.3 Дата 24/01/2020)дла unity 2017.4))");
 		}
 	}
-	#endif
 }
+#endif
